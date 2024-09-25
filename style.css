@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #fff;
+}
+
+nav {
+    background-color: #cacaca;
+    color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #497db8;
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#home {
+    background: #44666e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("keyboard_dri.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    text-align: center;
+}
+
+.profile {
+    border-radius: 100%;
+    scale: 75%;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+
+#home p {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+
+#about {
+    background-color: #333333;
+    align-content: center;
+}
+
+#about p {
+    padding-top: 30px;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+#skills {
+    background-color: #5e5e5e;
+    align-content: center;
+}
+
+#skills h3 {
+    padding: 30px;
+}
+
+.psslogo, .ibalogo {
+    scale: 5%;
+    height: 140px;
+    position: relative;
+    bottom: 70px;
+    right: 30px;
+}
+
+#education {
+    background-color: #333333;
+    align-content: center;
+}
+
+#education h2 {
+    padding-bottom: 25px;
+}
+
+#certifications {
+    background-color: #5e5e5e;
+    align-content: center;
+}
+
+#contact {
+    background-color: #333333;
+    align-content: center;
+}
+
+#contact h2 {
+    margin-bottom: 25px;
+}
+
+#contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 60%;
+    padding: 10px;
+    margin: 40px;
+    background-color: #797a7a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
